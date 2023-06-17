@@ -3,4 +3,4 @@
   targets:
     - fedora-all
 
-specfild_path: aws-sam-cli.spec
+specfile_path: aws-sam-cli.spec
