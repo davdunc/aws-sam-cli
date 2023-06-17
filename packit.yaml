@@ -1,10 +1,10 @@
 jobs:
   - job: sync_from_downstream
     trigger: commit
-- job: copr_build
-  trigger: commit
-  branch: main
-  targets:
-    - fedora-all
+  - job: copr_build
+    trigger: commit
+    branch: main
+    targets:
+      - fedora-all
 
 specfile_path: aws-sam-cli.spec
