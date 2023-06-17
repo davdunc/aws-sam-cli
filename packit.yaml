@@ -1,5 +1,9 @@
+jobs:
+  - job: sync_from_downstream
+    trigger: commit
 - job: copr_build
-  trigger: pull_request
+  trigger: commit
+  branch: main
   targets:
     - fedora-all
 
