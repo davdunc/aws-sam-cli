@@ -2,3 +2,5 @@
   trigger: pull_request
   targets:
     - fedora-all
+
+specfild_path: aws-sam-cli.spec
