@@ -3,18 +3,20 @@ Version:        1.84.0
 Release:        1%{?dist}
 Summary:        CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
 
-License:
+License:        Apache-2.0
 URL:            https://github.com/aws/%{name}
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: python3-devel
-Requires:
+BuildRequires:  python3-devel
 
 %description
 The AWS Serverless Application Model (SAM) CLI is an open-source CLI tool that helps you develop serverless applications containing Lambda functions, Step Functions, API Gateway, EventBridge, SQS, SNS and more.
 
 %package -n python3-aws-sam-cli
 Summary: %{summary}
+
+%description -n python3-aws-sam-cli
+The AWS Serverless Application Model (SAM) CLI is an open-source CLI tool that helps you develop serverless applications containing Lambda functions, Step Functions, API Gateway, EventBridge, SQS, SNS and more.
 
 %prep
 %autosetup -p1 -n aws-sam-cli-v%{version}
